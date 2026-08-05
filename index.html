@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donna Érica Calçados</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
-        rel="stylesheet" target="_blank" rel="noopener noreferrer">
+  <!-- Correção da fonte do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -14,25 +14,29 @@
   <header class="header">
     <div class="header-content container">
       <div class="logo">Donna Érica</div>
+      <!-- Botão Hambúrguer adicionado -->
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
       <nav class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="colecao.html">Coleção</a>
-  <a href="index.html#avaliacoes">Avaliações</a>
-  <a href="index.html#atendimento">Atendimento</a>
-</nav>
-
+        <a href="index.html">Home</a>
+        <a href="colecao.html">Coleção</a>
+        <a href="index.html#avaliacoes">Avaliações</a>
+        <a href="index.html#atendimento">Atendimento</a>
+      </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero fade-in">
     <div class="hero-content container">
       <div class="hero-text">
         <h1>Tendência e Conforto para todos os seus passos</h1>
         <p>Modelos exclusivos de rasteirinhas, papetes e saltos blocos acessíveis para você.</p>
         <a href="colecao.html" class="btn btn-solid">Ver Coleção Completa</a>
       </div>
-      <img src="/img/foto.jpeg" alt="Coleção Donna Érica" class="hero-img">
+      <!-- Caminho da imagem -->
+      <img src="img/foto.jpeg" alt="Coleção Donna Érica" class="hero-img" loading="lazy">
     </div>
   </section>
 
@@ -41,7 +45,7 @@
     <h2 class="section-title">Os Queridinhos do Momento</h2>
     <div class="products-grid">
       <div class="product-card">
-        <div class="product-img"></div>
+        <img src="https://via.placeholder.com/300x250?text=Sandalia+Dourada" alt="Sandália Amarração Dourada" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Sandália Amarração Dourada</h4>
           <p class="price">R$ 89,90</p>
@@ -49,7 +53,7 @@
         </div>
       </div>
       <div class="product-card">
-        <div class="product-img"></div>
+        <img src="https://via.placeholder.com/300x250?text=Papete+Strass" alt="Papete Strass Brilho" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Papete Strass Brilho</h4>
           <p class="price">R$ 119,90</p>
@@ -77,63 +81,59 @@
   </section>
 
   <!-- Atendimento -->
-<section class="atendimento container" id="atendimento">
-  <h2 class="section-title">Atendimento</h2>
-  <div class="atendimento-content">
-    <p><strong>Horário de atendimento:</strong> Segunda das 9h às 12h e das 14h às 18h</p> 
-    <p><strong>Sábado:</strong> das 9h às 12h</p>
-    <div class="contact-methods">
-      <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20informações%20sobre%20os%20produtos!" 
-         target="_blank" rel="noopener noreferrer" class="contact-link">
-        <i class="fab fa-whatsapp"></i> WhatsApp: (88) 99659-5049
-      </a>
-      <a href="https://www.instagram.com/donnaericacalcados?igsh=MTlieWduMzE3bXo4cQ==" 
-         target="_blank" rel="noopener noreferrer" class="contact-link">
-        <i class="fab fa-instagram"></i> Instagram: @donnaericacalcados
-      </a>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Localização -->
-    <div class="location-box">
-      <h3><i class="fas fa-map-marker-alt"></i> Nossa Loja</h3>
-      <p>Rua Lavras da Mangabeira, 1339 - Seminário, Crato-CE</p> 
-      <p>Próximo a Grendene</p>
-      <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9999999999995!2d-39.4286182!3d-7.2340664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a184f2398f9e95%3A0x1de222e173851b1c!2sR.%20Diogenes%20Fraz%C3%A3o%2C%201332-1338%20-%20Novo%20Crato%2C%20Crato%20-%20CE%2C%2063113-592!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr" 
-          width="100%" height="250" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy">
-        </iframe>
+  <section class="atendimento container" id="atendimento">
+    <h2 class="section-title">Atendimento</h2>
+    <div class="atendimento-content">
+      <p><strong>Horário de atendimento:</strong> Segunda das 9h às 12h e das 14h às 18h</p> 
+      <p><strong>Sábado:</strong> das 9h às 12h</p>
+      <div class="contact-methods">
+        <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20informações%20sobre%20os%20produtos!" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <i class="fab fa-whatsapp"></i> WhatsApp: (88) 99659-5049
+        </a>
+        <a href="https://www.instagram.com/donnaericacalcados?igsh=MTlieWduMzE3bXo4cQ==" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <i class="fab fa-instagram"></i> Instagram: @donnaericacalcados
+        </a>
       </div>
     </div>
+  </section>
 
-    <!-- Pagamentos -->
-    <div class="payment-methods">
-      <h3><i class="fas fa-credit-card"></i> Formas de pagamento</h3>
-      <div class="payment-icons">
-        <span><i class="fas fa-credit-card"></i> Cartão</span>
-        <span><i class="fas fa-money-bill-wave"></i> Dinheiro</span>
-        <span><i class="fas fa-qrcode"></i> Pix</span>
+  <!-- Footer Organizado -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Localização -->
+      <div class="location-box">
+        <h3><i class="fas fa-map-marker-alt"></i> Nossa Loja</h3>
+        <p>Rua Lavras da Mangabeira, 1339 - Seminário, Crato-CE</p> 
+        <p>Próximo a Grendene</p>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9999999999995!2d-39.4286182!3d-7.2340664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a184f2398f9e95%3A0x1de222e173851b1c!2sR.%20Diogenes%20Fraz%C3%A3o%2C%201332-1338%20-%20Novo%20Crato%2C%20Crato%20-%20CE%2C%2063113-592!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr" 
+            width="100%" height="200" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
       </div>
+      <!-- Pagamentos -->
+      <div class="payment-methods">
+        <h3><i class="fas fa-credit-card"></i> Formas de pagamento</h3>
+        <div class="payment-icons">
+          <span><i class="fas fa-credit-card"></i> Cartão</span>
+          <span><i class="fas fa-money-bill-wave"></i> Dinheiro</span>
+          <span><i class="fas fa-qrcode"></i> Pix</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Donna Érica © 2026 - Todos os direitos reservados.</p>
     </div>
   </footer>
 
-   <!-- Footer -->
-  <footer class="footer">
-    <p>Donna Érica © 2026 - Todos os direitos reservados.</p>
-    
-   
-
-  <!-- Botão WhatsApp -->
-  <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
-     target="_blank" rel="noopener noreferrer" class="fab-whatsapp">
+  <!-- Botão WhatsApp Flutuante -->
+  <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Fale conosco no WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
+ 
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
