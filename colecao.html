@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coleção - Donna Érica Calçados</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
-        rel="stylesheet" target="_blank" rel="noopener noreferrer">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -14,13 +13,15 @@
   <header class="header">
     <div class="header-content container">
       <div class="logo">Donna Érica</div>
-    <nav class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="colecao.html">Coleção</a>
-  <a href="index.html#avaliacoes">Avaliações</a>
-  <a href="index.html#atendimento">Atendimento</a>
-</nav>
-
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="colecao.html">Coleção</a>
+        <a href="index.html#avaliacoes">Avaliações</a>
+        <a href="index.html#atendimento">Atendimento</a>
+      </nav>
     </div>
   </header>
 
@@ -28,96 +29,92 @@
   <section class="vitrine container" id="colecao">
     <h2 class="section-title">Nossa Coleção Completa</h2>
     <div class="products-grid">
+      <!-- Produto 1 -->
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x250?text=Sandália+Dourada" alt="Sandália Amarração Dourada" class="product-img">
+        <img src="https://via.placeholder.com/300x250?text=Sandália+Dourada" alt="Sandália Amarração Dourada" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Sandália Amarração Dourada</h4>
           <p class="price">R$ 89,90</p>
-          <p>Tamanhos: 34 a 39</p>
-          <p>Cores: Dourado, Prata</p>
+          <p class="product-meta">Tamanhos: 34 a 39 | Cores: Dourado, Prata</p>
           <button class="btn btn-outline open-modal" data-name="Sandália Amarração Dourada" data-price="R$ 89,90">Ver Detalhes</button>
         </div>
       </div>
+      <!-- Produto 2 -->
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x250?text=Papete+Strass" alt="Papete Strass Brilho" class="product-img">
+        <img src="https://via.placeholder.com/300x250?text=Papete+Strass" alt="Papete Strass Brilho" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Papete Strass Brilho</h4>
           <p class="price">R$ 119,90</p>
-          <p>Tamanhos: 34 a 40</p>
-          <p>Cores: Preto, Branco</p>
+          <p class="product-meta">Tamanhos: 34 a 40 | Cores: Preto, Branco</p>
           <button class="btn btn-outline open-modal" data-name="Papete Strass Brilho" data-price="R$ 119,90">Ver Detalhes</button>
         </div>
       </div>
+      <!-- Produto 3 -->
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x250?text=Salto+Nude" alt="Salto Bloco Nude" class="product-img">
+        <img src="https://via.placeholder.com/300x250?text=Salto+Nude" alt="Salto Bloco Nude" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Salto Bloco Nude</h4>
           <p class="price">R$ 139,90</p>
-          <p>Tamanhos: 34 a 39</p>
-          <p>Cores: Nude, Preto</p>
+          <p class="product-meta">Tamanhos: 34 a 39 | Cores: Nude, Preto</p>
           <button class="btn btn-outline open-modal" data-name="Salto Bloco Nude" data-price="R$ 139,90">Ver Detalhes</button>
         </div>
       </div>
+      <!-- Produto 4 -->
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x250?text=Rasteira+Minimalista" alt="Rasteira Minimalista" class="product-img">
+        <img src="https://via.placeholder.com/300x250?text=Rasteira+Minimalista" alt="Rasteira Minimalista" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Rasteira Minimalista</h4>
           <p class="price">R$ 59,90</p>
-          <p>Tamanhos: 33 a 39</p>
-          <p>Cores: Preto, Bege</p>
+          <p class="product-meta">Tamanhos: 33 a 39 | Cores: Preto, Bege</p>
           <button class="btn btn-outline open-modal" data-name="Rasteira Minimalista" data-price="R$ 59,90">Ver Detalhes</button>
         </div>
       </div>
     </div>
   </section>
 
-
-
-    <!-- Localização -->
-    <div class="location-box">
-      <h3><i class="fas fa-map-marker-alt"></i> Nossa Loja</h3>
-      <p>Rua Lavras da Mangabeira, 1339 - Seminário, Crato-CE</p> 
-      <p>Próximo a Grendene</p>
-      <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9999999999995!2d-39.4286182!3d-7.2340664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a184f2398f9e95%3A0x1de222e173851b1c!2sR.%20Diogenes%20Fraz%C3%A3o%2C%201332-1338%20-%20Novo%20Crato%2C%20Crato%20-%20CE%2C%2063113-592!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr" 
-          width="100%" height="250" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy">
-        </iframe>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="location-box">
+        <h3><i class="fas fa-map-marker-alt"></i> Nossa Loja</h3>
+        <p>Rua Lavras da Mangabeira, 1339 - Seminário, Crato-CE</p> 
+        <p>Próximo a Grendene</p>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9999999999995!2d-39.4286182!3d-7.2340664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a184f2398f9e95%3A0x1de222e173851b1c!2sR.%20Diogenes%20Fraz%C3%A3o%2C%201332-1338%20-%20Novo%20Crato%2C%20Crato%20-%20CE%2C%2063113-592!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr" 
+            width="100%" height="200" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      <div class="payment-methods">
+        <h3><i class="fas fa-credit-card"></i> Formas de pagamento</h3>
+        <div class="payment-icons">
+          <span><i class="fas fa-credit-card"></i> Cartão</span>
+          <span><i class="fas fa-money-bill-wave"></i> Dinheiro</span>
+          <span><i class="fas fa-qrcode"></i> Pix</span>
+        </div>
       </div>
     </div>
-
-    <!-- Pagamentos -->
-    <div class="payment-methods">
-      <h3><i class="fas fa-credit-card"></i> Formas de pagamento</h3>
-      <div class="payment-icons">
-        <span><i class="fas fa-credit-card"></i> Cartão</span>
-        <span><i class="fas fa-money-bill-wave"></i> Dinheiro</span>
-        <span><i class="fas fa-qrcode"></i> Pix</span>
-      </div>
+    <div class="footer-bottom">
+      <p>Donna Érica © 2026 - Todos os direitos reservados.</p>
     </div>
   </footer>
 
-   <!-- Footer -->
-  <footer class="footer">
-    <p>Donna Érica © 2026 - Todos os direitos reservados.</p>
-    
-   
-
   <!-- Botão WhatsApp -->
-  <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
-     target="_blank" rel="noopener noreferrer" class="fab-whatsapp">
+  <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Fale conosco no WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Modal -->
-  <div id="productModal" class="modal">
+  <!-- Modal (Apenas UM) -->
+  <div id="productModal" class="modal" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <span class="close-btn">&times;</span>
+      <span class="close-btn" aria-label="Fechar">&times;</span>
       <div class="modal-grid">
-        <div class="modal-img-placeholder">Imagem Produto</div>
-        <div>
-          <h2 id="modalTitle"></h2>
-          <p id="modalPrice"></p>
+        <div class="modal-img-placeholder">Imagem Ilustrativa</div>
+        <div class="modal-details">
+          <h2 id="modalTitle">Nome do Produto</h2>
+          <p id="modalPrice" class="price"></p>
+          <p class="modal-instruction">Escolha o tamanho:</p>
           <div class="size-options">
             <div class="size-box">34</div>
             <div class="size-box">35</div>
@@ -126,48 +123,18 @@
             <div class="size-box">38</div>
           </div>
           <div class="frete-box">
-            <input type="text" id="cepInput" placeholder="Digite seu CEP">
+            <input type="text" id="cepInput" placeholder="Digite seu CEP" maxlength="9">
             <button onclick="calcularFrete()" class="btn btn-solid">Calcular Frete</button>
           </div>
           <p id="freteResult"></p>
           <div class="modal-buy">
-            <button class="btn btn-solid">Comprar Agora</button>
+            <button id="buyBtn" class="btn btn-solid w-100">Comprar Agora no WhatsApp</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal -->
-  <div id="productModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <div class="modal-grid">
-        <div class="modal-img-placeholder">Imagem Produto</div>
-        <div>
-          <h2 id="modalTitle"></h2>
-          <p id="modalPrice"></p>
-          <div class="size-options">
-            <div class="size-box">34</div>
-            <div class="size-box">35</div>
-            <div class="size-box">36</div>
-            <div class="size-box">37</div>
-            <div class="size-box">38</div>
-          </div>
-          <div class="frete-box">
-            <input type="text" id="cepInput" placeholder="Digite seu CEP">
-            <button onclick="calcularFrete()" class="btn btn-solid">Calcular Frete</button>
-          </div>
-          <p id="freteResult"></p>
-          <div class="modal-buy">
-            <button class="btn btn-solid">Comprar Agora</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
