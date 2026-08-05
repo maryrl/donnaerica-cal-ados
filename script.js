@@ -38,6 +38,17 @@ window.addEventListener("click", (event) => {
   }
 });
 
+
+
+// Menu hamburguer
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+
 // Função de cálculo de frete (simulação)
 function calcularFrete() {
   const cep = cepInput.value.trim();
