@@ -1,133 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donna Érica Calçados</title>
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Fonte Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
-          rel="stylesheet" target="_blank" rel="noopener noreferrer">
-    <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna Érica Calçados</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
+        rel="stylesheet" target="_blank" rel="noopener noreferrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content container">
-            <div class="logo">Donna Érica</div>
-            <nav class="nav-links">
-                <a href="colecao.html">Coleção</a>
-                <a href="#avaliacoes">Avaliações</a>
-                <a href="#atendimento">Atendimento</a>
-            </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content container">
+      <div class="logo">Donna Érica</div>
+      <nav class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="colecao.html">Coleção</a>
+  <a href="index.html#avaliacoes">Avaliações</a>
+  <a href="index.html#atendimento">Atendimento</a>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content container">
+      <div class="hero-text">
+        <h1>Tendência e Conforto para todos os seus passos</h1>
+        <p>Modelos exclusivos de rasteirinhas, papetes e saltos blocos acessíveis para você.</p>
+        <a href="colecao.html" class="btn btn-solid">Ver Coleção Completa</a>
+      </div>
+      <img src="/img/foto.jpeg" alt="Coleção Donna Érica" class="hero-img">
+    </div>
+  </section>
+
+  <!-- Vitrine -->
+  <section class="vitrine container">
+    <h2 class="section-title">Os Queridinhos do Momento</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img"></div>
+        <div class="product-info">
+          <h4>Sandália Amarração Dourada</h4>
+          <p class="price">R$ 89,90</p>
+          <button class="btn btn-outline open-modal" data-name="Sandália Amarração Dourada" data-price="R$ 89,90">Ver Detalhes</button>
         </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content container">
-            <div class="hero-text">
-                <h1>Tendência e Conforto para todos os seus passos</h1>
-                <p>Modelos exclusivos de rasteirinhas, papetes e saltos blocos acessíveis para você.</p>
-                <a href="colecao.html" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Ver Coleção Completa</a>
-            </div>
-            <div class="image-placeholder">Imagem Hero</div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"></div>
+        <div class="product-info">
+          <h4>Papete Strass Brilho</h4>
+          <p class="price">R$ 119,90</p>
+          <button class="btn btn-outline open-modal" data-name="Papete Strass Brilho" data-price="R$ 119,90">Ver Detalhes</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Vitrine -->
-    <section class="vitrine container">
-        <h2 class="section-title">Os Queridinhos do Momento</h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-img"></div>
-                <div class="product-info">
-                    <h4>Sandália Amarração Dourada</h4>
-                    <p class="price">R$ 89,90</p>
-                    <button class="btn btn-outline open-modal" 
-                            data-name="Sandália Amarração Dourada" 
-                            data-price="R$ 89,90">Ver Detalhes</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img"></div>
-                <div class="product-info">
-                    <h4>Papete Strass Brilho</h4>
-                    <p class="price">R$ 119,90</p>
-                    <button class="btn btn-outline open-modal" 
-                            data-name="Papete Strass Brilho" 
-                            data-price="R$ 119,90">Ver Detalhes</button>
-                </div>
-            </div>
-            <!-- Outros produtos... -->
-        </div>
-    </section>
+  <!-- Avaliações -->
+  <section class="testimonials container" id="avaliacoes">
+    <h2 class="section-title">O que nossas clientes dizem</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Amei minha rasteirinha! Super confortável e o atendimento no WhatsApp foi perfeito. Chegou rapidinho."</p>
+        <span>- Maria S., SP</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"O salto bloco é maravilhoso, uso para trabalhar o dia todo e não cansa os pés. Recomendo muito!"</p>
+        <span>- Ana P., MG</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- Depoimentos -->
-    <section class="testimonials container" id="avaliacoes">
-        <h2 class="section-title">O que nossas clientes dizem</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"Amei minha rasteirinha! Super confortável e o atendimento no WhatsApp foi perfeito. Chegou rapidinho."</p>
-                <span>- Maria S., SP</span>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"O salto bloco é maravilhoso, uso para trabalhar o dia todo e não cansa os pés. Recomendo muito!"</p>
-                <span>- Ana P., MG</span>
-            </div>
-        </div>
-    </section>
+  <!-- Atendimento -->
+<section class="atendimento container" id="atendimento">
+  <h2 class="section-title">Atendimento</h2>
+  <div class="atendimento-content">
+    <p><strong>Horário de atendimento:</strong> Segunda das 9h às 12h e das 14h às 18h</p> 
+    <p><strong>Sábado:</strong> das 9h às 12h</p>
+    <div class="contact-methods">
+      <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20informações%20sobre%20os%20produtos!" 
+         target="_blank" rel="noopener noreferrer" class="contact-link">
+        <i class="fab fa-whatsapp"></i> WhatsApp: (88) 99659-5049
+      </a>
+      <a href="https://www.instagram.com/donnaericacalcados?igsh=MTlieWduMzE3bXo4cQ==" 
+         target="_blank" rel="noopener noreferrer" class="contact-link">
+        <i class="fab fa-instagram"></i> Instagram: @donnaericacalcados
+      </a>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Donna Érica © 2026 - Todos os direitos reservados.</p>
-    </footer>
 
-    <!-- Botão WhatsApp com mensagem pré-preenchida -->
-    <a href="https://wa.me/5588999999999?text=Olá%20Donna%20Érica,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
-       target="_blank" rel="noopener noreferrer" class="fab-whatsapp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Modal -->
-    <div id="productModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <div class="modal-grid">
-                <div class="modal-img-placeholder">Imagem Produto</div>
-                <div>
-                    <h2 id="modalTitle"></h2>
-                    <p id="modalPrice"></p>
-                    
-                    <!-- Opções de tamanho -->
-                    <div class="size-options">
-                        <div class="size-box">34</div>
-                        <div class="size-box">35</div>
-                        <div class="size-box">36</div>
-                        <div class="size-box">37</div>
-                        <div class="size-box">38</div>
-                    </div>
-
-                    <!-- Cálculo de frete -->
-                    <div class="frete-box">
-                        <input type="text" id="cepInput" placeholder="Digite seu CEP">
-                        <button onclick="calcularFrete()" class="btn btn-solid">Calcular Frete</button>
-                    </div>
-                    <p id="freteResult"></p>
-
-                    <div class="modal-buy">
-                        <button class="btn btn-solid">Comprar Agora</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Localização -->
+    <div class="location-box">
+      <h3><i class="fas fa-map-marker-alt"></i> Nossa Loja</h3>
+      <p>Rua Lavras da Mangabeira, 1339 - Seminário, Crato-CE</p> 
+      <p>Próximo a Grendene</p>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9999999999995!2d-39.4286182!3d-7.2340664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a184f2398f9e95%3A0x1de222e173851b1c!2sR.%20Diogenes%20Fraz%C3%A3o%2C%201332-1338%20-%20Novo%20Crato%2C%20Crato%20-%20CE%2C%2063113-592!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr" 
+          width="100%" height="250" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
     </div>
 
-    <!-- JS principal -->
-    <script src="script.js"></script>
+    <!-- Pagamentos -->
+    <div class="payment-methods">
+      <h3><i class="fas fa-credit-card"></i> Formas de pagamento</h3>
+      <div class="payment-icons">
+        <span><i class="fas fa-credit-card"></i> Cartão</span>
+        <span><i class="fas fa-money-bill-wave"></i> Dinheiro</span>
+        <span><i class="fas fa-qrcode"></i> Pix</span>
+      </div>
+    </div>
+  </footer>
+
+   <!-- Footer -->
+  <footer class="footer">
+    <p>Donna Érica © 2026 - Todos os direitos reservados.</p>
+    
+   
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5588996595049?text=Olá%20Donna%20Érica,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
+     target="_blank" rel="noopener noreferrer" class="fab-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-grid">
+        <div class="modal-img-placeholder">Imagem Produto</div>
+        <div>
+          <h2 id="modalTitle"></h2>
+          <p id="modalPrice"></p>
+          <div class="size-options">
+            <div class="size-box">34</div>
+            <div class="size-box">35</div>
+            <div class="size-box">36</div>
+            <div class="size-box">37</div>
+            <div class="size-box">38</div>
+          </div>
+          <div class="frete-box">
+            <input type="text" id="cepInput" placeholder="Digite seu CEP">
+            <button onclick="calcularFrete()" class="btn btn-solid">Calcular Frete</button>
+          </div>
+          <p id="freteResult"></p>
+          <div class="modal-buy">
+            <button class="btn btn-solid">Comprar Agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
